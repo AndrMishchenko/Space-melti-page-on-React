@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { Link, Outlet} from 'react-router-dom';
 import logo from './PhotoNavigation/logo.svg';
-import humb from './PhotoNavigation/hamburger.svg'
-import close from './PhotoNavigation/close.svg'
+import humb from './PhotoNavigation/hamburger.svg';
+import close from './PhotoNavigation/close.svg';
 
 const Nav = () => {
 
@@ -54,7 +54,11 @@ const Nav = () => {
                       onClick={() => onClickButton('destination')}
                       className={clickButton === 'destination' ? 'active' : ''}
                     >Destination</Link>
-                    <Link to="/crew">Crew</Link>
+                    <Link 
+                      to="/crew"
+                      onClick={() => onClickButton('crew')}
+                      className={clickButton === 'crew' ? 'active' : ''}
+                    >Crew</Link>
                     <Link to="/technology">Technology</Link>
                   </div>
                 </div>
@@ -72,7 +76,11 @@ const Nav = () => {
              onClick={() => onClickButton('destination')}
              className={clickButton === 'destination' ? 'active' : ''}
           >Destination</Link>
-          <Link to="/crew">Crew</Link>
+          <Link 
+            to="/crew"
+            onClick={() => onClickButton('crew')}
+            className={clickButton === 'crew' ? 'active' : ''}
+          >Crew</Link>
           <Link to="/technology">Technology</Link>
         </div>
 

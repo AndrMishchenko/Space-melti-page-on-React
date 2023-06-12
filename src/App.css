@@ -203,6 +203,251 @@ a:hover{
   cursor: pointer;
 }
 
+
+/*Destination*/
+
+.destination{
+  background-image: url(./Photo/Destination/background-destination-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.planet-block{
+  width: 80%;
+  height: 65%;
+  margin-bottom: 100px;
+}
+
+.planet-block-titel{
+  color: white;
+  font-size: 25px;
+  font-family: 'Barlow';
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+.planet-block-info{
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.planet-block-specification{
+  width: 100%;
+  height: 100%;
+}
+
+.planet-block-menu{
+  height: 10%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);  
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.planet-block-menu p{
+  text-align: center;
+  color: white;
+  font-family: 'Barlow';
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 20%;
+}
+
+.planet-block-menu p:hover{
+  border-top: 2px solid rgb(0, 204, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.moon,
+.mars,
+.europa,
+.titan{
+  border-bottom: 2px solid white;
+  width: 100%;
+}
+
+.moon-active,
+.mars-active,
+.europa-active,
+.titan-active{
+  border-bottom: 2px solid white;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.block-moon,
+.block-mars,
+.block-europa,
+.block-titan{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+
+.moon-img{
+  background-image: url(./Pages/image-moon.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.mars-img{
+  background-image: url(./Pages/image-mars.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.europa-img{
+  background-image: url(./Pages/image-europa.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.titan-img{
+  background-image: url(./Pages/image-titan.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.planet-moon-info,
+.planet-mars-info,
+.planet-europa-info,
+.planet-titan-info{
+  width: 40%;
+}
+
+.planet-moon-titel,
+.planet-mars-titel,
+.planet-europa-titel,
+.planet-titan-titel{
+  font-size: 100px;
+  font-family: 'Belefaur Regular';
+  text-transform: uppercase;
+  color: white;
+}
+
+.planet-moon-text,
+.planet-mars-text,
+.planet-europa-text,
+.planet-titan-text{
+  font-size: 16px;
+  color: white;
+  font-weight: 300;
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+
+.planet-moon-block-border,
+.planet-mars-block-border,
+.planet-europa-block-border,
+.planet-titan-block-border{
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255,255,255, 0.5);
+  margin-bottom: 20px;
+}
+
+.planet-moon-block-dist-travel,
+.planet-mars-block-dist-travel,
+.planet-europa-block-dist-travel,
+.planet-titan-block-dist-travel{
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 80px;
+}
+
+.planet-moon-block-dist-travel p,
+.planet-mars-block-dist-travel p,
+.planet-europa-block-dist-travel p,
+.planet-titan-block-dist-travel p{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.planet-moon-distance-title,
+.planet-mars-distance-title,
+.planet-europa-distance-title,
+.planet-titan-distance-title{
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  font-family: 'Barlow';
+  margin-bottom: 20px;
+}
+
+.planet-moon-distance,
+.planet-mars-distance,
+.planet-europa-distance,
+.planet-titan-distance{
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+  font-family: 'Belefaur Regular';
+}
+
+.planet-moon-travel-title,
+.planet-mars-travel-title,
+.planet-europa-travel-title,
+.planet-titan-travel-title{
+  font-size: 14px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.5);
+  font-family: 'Barlow';
+  margin-bottom: 20px;
+}
+
+.planet-moon-travel,
+.planet-mars-travel,
+.planet-europa-travel,
+.planet-titan-travel{
+  font-size: 30px;
+  color: white;
+  font-weight: 300;
+  font-family: 'Belefaur Regular';
+}
+
+/*Crew*/
+.crew{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Photo/Crew/background-crew-desktop.jpg);
+  background-size: cover;
+}
+
 @media(max-width:990px){
   /*Nav*/
   header{
@@ -253,6 +498,44 @@ a:hover{
     width: 180px;
     font-size: 25px;
   }
+
+  /*Destination*/
+  .moon-img,
+  .mars-img,
+  .europa-img,
+  .titan-img{
+    min-width: 300px;
+    min-height: 300px;
+  }
+  .block-moon{
+    gap: 50px;
+  }
+  .planet-moon-titel,
+  .planet-mars-titel,
+  .planet-europa-titel,
+  .planet-titan-titel{
+    font-size: 75px;
+  }
+  .planet-moon-block-dist-travel{
+    gap: 10px;
+    width: 100%;
+  }
+  .planet-block-specification{
+    margin-left: 0;
+  }
+  .planet-moon-distance,
+  .planet-moon-travel,
+  .planet-mars-distance,
+  .planet-mars-travel,
+  .planet-europa-distance,
+  .planet-europa-travel,
+  .planet-titan-distance,
+  .planet-titan-travel{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media(max-width:775px){
@@ -291,6 +574,88 @@ a:hover{
   }
   .nav-img img{
     margin-top: -10px;
+  }
+
+  /*Destination*/
+  .planet-block{
+    width: 90%;
+    height: 85%;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .planet-block-titel{
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .moon-img{
+    min-width: 250px;
+    min-height: 250px;
+  }
+  .mars-img,
+  .europa-img,
+  .titan-img{
+    min-width: 250px;
+    min-height: 250px;
+  }
+  .planet-block-menu{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+  }
+  .planet-block-specification{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .block-moon,
+  .block-mars,
+  .block-europa,
+  .block-titan{
+    display: flex;
+    flex-direction: column;
+  }
+  .planet-moon-info  {
+    width: 80%;
+    margin-top: 5px;
+  }
+  .planet-mars-info,
+  .planet-europa-info,
+  .planet-titan-info{
+    width: 80%;
+    margin-top: -95px;
+  }
+  .planet-moon-titel,
+  .planet-moon-text,
+  .planet-mars-titel,
+  .planet-mars-text,
+  .planet-europa-titel,
+  .planet-europa-text,
+  .planet-titan-titel,
+  .planet-titan-text{
+    text-align: center;
+  }
+  .planet-moon-block-dist-travel,
+  .planet-mars-block-dist-travel,
+  .planet-europa-block-dist-travel,
+  .planet-titan-block-dist-travel{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+  .planet-moon-block-dist-travel p,
+  .planet-mars-block-dist-travel p,
+  .planet-europa-block-dist-travel p,
+  .planet-titan-block-dist-travel p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -391,67 +756,38 @@ a:hover{
     width: 150px;
     height: 150px;
   }
-}
 
-
-/*Destination*/
-
-
-
-.destination{
-  background-image: url(./Photo/Destination/background-destination-desktop.jpg);
-  background-size: contain;
-  width: 100%;
-  height: 100vh;
-
-}
-
-
-
-.menu{
-  color: white;
-  position: absolute;
-  top: 200px;
-}
-
-
-
-
-
-.moon-info{
-  width: 200px;
-  height: 200px;
-  background-color: aquamarine;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.mars-info{
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.europa-info{
-  width: 200px;
-  height: 200px;
-  background-color: rgb(21, 255, 0);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.titan-info{
-  width: 200px;
-  height: 200px;
-  background-color: rgb(251, 255, 0);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /*Destination*/
+  .planet-block-menu{
+    top: 50%;
+  }
+  .mars-img{
+    margin-top: -25px;
+  }
+  .titan-img{
+    margin-top: -10px;
+  }
+  .planet-block-menu{
+    width: 80%;
+    gap: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .planet-block-menu p{
+    font-size: 14px;
+  }
+  .planet-moon-titel,
+  .planet-mars-titel,
+  .planet-europa-titel,
+  .planet-titen-titel{
+    font-size: 60px;
+  }
+  .planet-moon-block-dist-travel,
+  .planet-mars-block-dist-travel,
+  .planet-europa-block-dist-travel,
+  .planet-titan-block-dist-travel{
+    width: 100%;
+    gap:30px;
+  }
 }
