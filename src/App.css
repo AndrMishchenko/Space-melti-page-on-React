@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap');
 
 *{
   margin: 0;
@@ -446,6 +447,136 @@ a:hover{
   height: 100vh;
   background-image: url(./Photo/Crew/background-crew-desktop.jpg);
   background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.crew-block{
+  width: 79%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crew-status{
+  width: 50%;
+  height: 100%;
+}
+
+.crew-titel{
+  color: white;
+  font-size: 25px;
+  font-family: 'Barlow';
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-left: 60px;
+  margin-bottom: 100px;
+}
+
+.crew-block-info{
+  margin-top: 150px;
+  margin-left: 55px;
+}
+
+.commander-role,
+.specialist-role,
+.pilot-role,
+.engineer-role{
+  font-weight: 300;
+  font-size: 25px;
+  font-family: 'Belefaur Regular';
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.commander-name,
+.specialist-name,
+.pilot-name,
+.engineer-name{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Belefaur Regular';
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.commandet-bio,
+.specialist-bio,
+.pilot-bio,
+.engineer-bio{
+  color: white;
+  font-family: 'Barlow';
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 30px;
+  height: 200px;
+  width: 90%;
+}
+
+.crew-menu{
+  display: flex;
+  gap: 20px;
+  margin-left: 55px;
+  margin-top: 50px;
+}
+
+.crew-menu p{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.crew-photo{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photo-commander{
+  background-image: url(./Photo/Crew/image-douglas-hurley.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 650px;
+}
+
+.photo-specialist{
+  background-image: url(./Photo/Crew/image-mark-shuttleworth.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50vw;
+  height: 650px;
+}
+
+.photo-pilot{
+  background-image: url(./Photo/Crew/image-victor-glover.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 57vw;
+  height: 650px;
+}
+
+.photo-engineer{
+  background-image: url(./Photo/Crew/image-anousheh-ansari.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 57vw;
+  height: 575px;
 }
 
 @media(max-width:990px){
@@ -535,6 +666,33 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /*Crew*/
+  .crew-block{
+    width: 100%;
+  }
+  .commandet-bio,
+  .specialist-bio,
+  .pilot-bio,
+  .engineer-bio{
+    font-size: 14px;
+  }
+  .photo-commander{
+    width: 60vw;
+    height: 550px;
+  }
+  .photo-specialist{
+    width: 50vw;
+    height: 500px;
+  }
+  .photo-pilot{
+    width: 55vw;
+    height: 500px;
+  }
+  .photo-engineer{
+    width: 55vw;
+    height: 450px;
   }
 }
 
@@ -656,6 +814,103 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  /*Crew*/
+  .crew{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .crew-block{
+    height: 85%;
+    flex-direction: column;
+  }
+  
+  .crew-status{
+    width: 85%;
+    height: 100%;
+  }
+  
+  .crew-titel{
+    margin-left: 0px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .crew-block-info{
+    margin-top: 120px;
+    margin-left: 0px;
+  }
+  
+  .commander-role,
+  .specialist-role,
+  .pilot-role,
+  .engineer-role{
+    text-align: center;
+  }
+  
+  .commander-name,
+  .specialist-name,
+  .pilot-name,
+  .engineer-name{
+    text-align: center;
+  }
+  
+  .commandet-bio,
+  .specialist-bio,
+  .pilot-bio,
+  .engineer-bio{
+    color: white;
+    font-family: 'Barlow';
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 30px;
+    height: 170px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .crew-menu{
+    display: flex;
+    gap: 20px;
+    margin-left: 0px;
+    margin-top: 0px;
+    justify-content: center;
+  }
+  
+  .crew-menu p{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .crew-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .photo-commander{
+    width: 50vw;
+    height: 320px;
+  }
+  .photo-specialist{
+    width: 55vw;
+    height: 275px;
+  }
+  .photo-pilot{
+    width: 55vw;
+    height: 320px;
+  }
+  .photo-engineer{
+    width: 65vw;
+    height: 320px;
   }
 }
 
