@@ -85,10 +85,10 @@ const Crew = () => {
           )}
 
           <div className='crew-menu'>
-            <p onClick={infoCommander}></p>
-            <p onClick={infoMissionSpecialist}></p>
-            <p onClick={infoPilot}></p>
-            <p onClick={infoFlightEngineer}></p>
+            <p className={crewMember === 'commander' ? 'circle-active' : 'circle-commander'} onClick={infoCommander}></p>
+            <p className={crewMember === 'specialist' ? 'circle-active' : 'circle-specialist'} onClick={infoMissionSpecialist}></p>
+            <p className={crewMember === 'pilot' ? 'circle-active' : 'circle-pilot'} onClick={infoPilot}></p>
+            <p className={crewMember === 'engineer' ? 'circle-active' : 'circle-engineer'} onClick={infoFlightEngineer}></p>
           </div>
         </div>
         <div className='crew-photo'>

@@ -453,7 +453,7 @@ a:hover{
 }
 
 .crew-block{
-  width: 79%;
+  width: 86%;
   height: 75%;
   display: flex;
   align-items: center;
@@ -477,7 +477,7 @@ a:hover{
 }
 
 .crew-block-info{
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 55px;
 }
 
@@ -514,7 +514,7 @@ a:hover{
   font-size: 16px;
   font-weight: 100;
   line-height: 30px;
-  height: 200px;
+  height: 170px;
   width: 90%;
 }
 
@@ -525,14 +525,24 @@ a:hover{
   margin-top: 50px;
 }
 
-.crew-menu p{
-  width: 20px;
+.circle-commander,
+.circle-specialist,
+.circle-pilot,
+.circle-engineer{
   height: 20px;
+  width: 20px;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 50%;
+}
+
+.circle-active{
+  height: 20px;
+  width: 20px;
   background-color: white;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.crew-menu p{
   cursor: pointer;
 }
 
@@ -577,6 +587,19 @@ a:hover{
   background-repeat: no-repeat;
   width: 57vw;
   height: 575px;
+}
+
+
+/*Tech*/
+.tech{
+  width: 100%;
+  height: 100vh;
+  background-image: url(./Photo/Tech/background-technology-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
 }
 
 @media(max-width:990px){
@@ -676,7 +699,9 @@ a:hover{
   .specialist-bio,
   .pilot-bio,
   .engineer-bio{
+    height: 200px;
     font-size: 14px;
+    margin-bottom: -50px;
   }
   .photo-commander{
     width: 60vw;
@@ -840,7 +865,7 @@ a:hover{
   }
   
   .crew-block-info{
-    margin-top: 120px;
+    margin-top: 50px;
     margin-left: 0px;
   }
   
@@ -856,6 +881,8 @@ a:hover{
   .pilot-name,
   .engineer-name{
     text-align: center;
+    margin-bottom: 15px;
+    font-size: 35px;
   }
   
   .commandet-bio,
@@ -870,8 +897,8 @@ a:hover{
     height: 170px;
     width: 100%;
     text-align: center;
+    margin-bottom: 0px;
   }
-  
   .crew-menu{
     display: flex;
     gap: 20px;
@@ -879,39 +906,28 @@ a:hover{
     margin-top: 0px;
     justify-content: center;
   }
-  
-  .crew-menu p{
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-  }
-
   .crew-photo{
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .photo-commander{
-    width: 50vw;
-    height: 320px;
+    width: 55vw;
+    height: 350px;
   }
   .photo-specialist{
-    width: 55vw;
-    height: 275px;
+    width: 60vw;
+    height: 350px;
   }
   .photo-pilot{
-    width: 55vw;
-    height: 320px;
+    width: 60vw;
+    height: 350px;
   }
   .photo-engineer{
-    width: 65vw;
-    height: 320px;
+    width: 70vw;
+    height: 350px;
   }
+  
 }
 
 @media(max-width:500px){
@@ -1016,6 +1032,13 @@ a:hover{
   .planet-block-menu{
     top: 50%;
   }
+  .planet-block{
+    width: 100%;
+  }
+  .planet-block-titel{
+    font-size: 20px;
+    margin-left: 0px;
+  }
   .mars-img{
     margin-top: -25px;
   }
@@ -1027,7 +1050,8 @@ a:hover{
     gap: 5px;
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 10px;
+    height: 30px;
   }
   .planet-block-menu p{
     font-size: 14px;
@@ -1035,8 +1059,11 @@ a:hover{
   .planet-moon-titel,
   .planet-mars-titel,
   .planet-europa-titel,
-  .planet-titen-titel{
-    font-size: 60px;
+  .planet-titan-titel{
+    font-size: 40px;
+  }
+  .planet-moon-info{
+    margin-top: 0px;
   }
   .planet-moon-block-dist-travel,
   .planet-mars-block-dist-travel,
@@ -1044,5 +1071,85 @@ a:hover{
   .planet-titan-block-dist-travel{
     width: 100%;
     gap:30px;
+  }
+  .moon-img{
+    margin-top: 0px;
+  }
+  .planet-moon-distance,
+  .planet-moon-travel{
+    font-size: 20px;
+  }
+  .planet-mars-distance,
+  .planet-mars-travel{
+    font-size: 18px;
+  }
+  .planet-europa-distance,
+  .planet-europa-travel{
+    font-size: 18px;
+  }
+  .planet-titan-distance,
+  .planet-titan-travel{
+    font-size: 18px;
+  }
+
+  /*Crew*/
+  .crew-block{
+    height: 85%;
+  }
+  .crew-titel{
+    margin-bottom: 0;
+  }
+  .crew-block-info{
+    margin-top: 300px;
+    width: 100%;
+  }
+  .commander-role,
+  .specialist-role,
+  .pilot-role,
+  .engineer-role{
+    font-size: 25px;
+    margin-top: -25px;
+  }
+  .commander-name,
+  .specialist-name,
+  .pilot-name,
+  .engineer-name{
+    font-size: 35px;
+    margin-bottom: 5px;
+    margin-top: -15px;
+  }
+  .commandet-bio,
+  .specialist-bio,
+  .pilot-bio,
+  .engineer-bio{
+    font-size: 15px;
+  }
+  .crew-menu{
+    margin-top: 50px;
+  }
+  .crew-photo{
+    position: absolute;
+    top: -20px;
+    height: 50%;
+    width: 90%;
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+  }
+  .photo-commander{
+    width: 57vw;
+    height: 250px;
+  }
+  .photo-specialist{
+    width: 53vw;
+    height: 250px;
+  }
+  .photo-pilot{
+    width: 67vw;
+    height: 250px;
+  }
+  .photo-engineer{
+    width: 74vw;
+    height: 250px;
   }
 }
