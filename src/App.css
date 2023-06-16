@@ -49,6 +49,11 @@ header{
   justify-content: space-between;
   height: 100px;
   position: relative;
+  text-transform: uppercase;
+}
+
+.navigation a{
+  width: 100%;
 }
 
 .navigation::after{
@@ -99,6 +104,7 @@ a:hover{
 
 .mob-menu{
   display: none;
+  text-transform: uppercase;
 }
 
 .open-mob-menu{
@@ -598,9 +604,144 @@ a:hover{
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  justify-content: center;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: center;
 }
+
+.tech-block{
+  width: 90%;
+  height: 75%;
+  margin-top: 100px;
+}
+
+.tech-title-page{
+  font-size: 25px;
+  font-weight: 400;
+  font-family: 'Barlow';
+  color: white;
+  margin-top: 60px;
+  text-transform: uppercase;
+}
+
+
+.tech-title{
+  margin-left: 5px;
+  color: white;
+  font-size: 25px;
+  font-family: 'Barlow';
+  font-weight: 400;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.tech-wrapper{
+  width: 100%;
+  height: 65%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.teck-block-info{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tech-menu{
+  height: 350px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  justify-content: space-between;
+}
+.tech-menu p{
+  cursor: pointer;
+}
+
+.tech-menu-off{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family: 'Barlow';
+  font-weight: 100;
+}
+
+.tech-menu-active{
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.tech-info{
+  width: 600px;
+  height: 350px;
+}
+
+.tech-pre-title{
+  font-family: 'Barlow';
+  font-weight: 100;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.tech-title{
+  margin-top: 60px;
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Barlow';
+}
+
+.tech-text{
+  margin-top: 40px;
+  color: white;
+  font-family: 'Barlow';
+  font-size: 20px;
+  font-weight: 100;
+  width: 100%;
+}
+
+.first-img{
+  background-image: url(./Photo/Tech/image-launch-vehicle-portrait.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 32vw;
+  width: 30vw;
+}
+
+.second-img{
+  background-image: url(./Photo/Tech/image-spaceport-portrait.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 32vw;
+  width: 30vw;
+}
+
+.third-img{
+  background-image: url(./Photo/Tech/image-space-capsule-portrait.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 32vw;
+  width: 30vw;
+}
+
+
 
 @media(max-width:990px){
   /*Nav*/
@@ -719,6 +860,29 @@ a:hover{
     width: 55vw;
     height: 450px;
   }
+
+  /*Tech*/
+  .tech-menu{
+    width: 100px;
+  }
+  .tech-info{
+    width: 400px;
+    height: 350px;
+  }
+  .tech-title{
+    margin-top: 20px;
+  }
+  .first-img,
+  .second-img,
+  .third-img{
+    height: 40vw;
+    width: 38vw;
+  }
+  .tech-text{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 100;
+  }
 }
 
 @media(max-width:775px){
@@ -821,6 +985,10 @@ a:hover{
   .planet-titan-titel,
   .planet-titan-text{
     text-align: center;
+  }
+  .planet-moon-text{
+    font-family: 'Barlow';
+    font-weight: 100;
   }
   .planet-moon-block-dist-travel,
   .planet-mars-block-dist-travel,
@@ -928,6 +1096,86 @@ a:hover{
     height: 350px;
   }
   
+  /*Tech*/
+  .tech-block{
+    margin-top: 20px;
+    width: 100%;
+  }
+  .tech-title-page{
+    margin-top: 0;
+    text-align: center;
+  }
+  .teck-block-info{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 400px;
+  }
+  .tech-menu{
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    gap: 50px;
+    height: 100px;
+    margin-top: 80px;
+  }
+  .tech-menu p{
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+  .tech-info{
+    margin-top: 20px;
+    width: 75%;
+  }
+  .tech-pre-title{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .tech-title{
+    margin-top: 0;
+    text-align: center;
+  }
+  .tech-text{
+    margin-top: 15px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 17px;
+  }
+  .first-img{
+    background-image: url(./Photo/Tech/image-launch-vehicle-portrait.jpg);
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: -240px;
+  }
+  .second-img{
+    background-image: url(./Photo/Tech/image-spaceport-portrait.jpg);
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: -240px;
+  }
+  .third-img{
+    background-image: url(./Photo/Tech/image-space-capsule-portrait.jpg);
+    width: 100%;
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: -240px;
+  }
+  .tech-wrapper{
+    height: 0px;
+  }
+  .img{
+    width: 100%;
+  }
 }
 
 @media(max-width:500px){
@@ -1151,5 +1399,24 @@ a:hover{
   .photo-engineer{
     width: 74vw;
     height: 250px;
+  }
+
+  /*Tech*/
+  .tech-menu{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .tech-menu p{
+    height: 50px;
+    width: 50px;
+  }
+  .tech-info{
+    width: 90%;
+  }
+  .tech-title{
+    font-size: 30px;
+  }
+  .tech-text{
+    font-size: 14px;
   }
 }

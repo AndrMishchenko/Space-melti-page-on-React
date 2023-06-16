@@ -59,7 +59,11 @@ const Nav = () => {
                       onClick={() => onClickButton('crew')}
                       className={clickButton === 'crew' ? 'active' : ''}
                     >Crew</Link>
-                    <Link to="/technology">Technology</Link>
+                    <Link 
+                      to="/technology"
+                      onClick={() => onClickButton('crew')}
+                      className={clickButton === 'tech' ? 'active' : ''}
+                    >Technology</Link>
                   </div>
                 </div>
             </div>
